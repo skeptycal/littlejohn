@@ -2,11 +2,11 @@
 // https://github.com/skeptycal
 // MIT License
 
-package gorepotemplate
+package littlejohn
 
 import "fmt"
 
 func Example() {
 
-	fmt.Println("Example import acknowledgement from package gorepotemplate")
+	fmt.Println("Example import acknowledgement from package littlejohn")
 }

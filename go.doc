@@ -1,0 +1,5 @@
+package littlejohn // import "github.com/skeptycal/littlejohn"
+
+Package littlejohn contains utilities for macOS.
+
+func Example()

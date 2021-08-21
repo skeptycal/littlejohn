@@ -11,6 +11,6 @@ type gather struct{}
 // functions that do not supply their own
 func init() { rand.Seed(time.Now().UTC().UnixNano()) }
 
-func get() (gather, error) {
+func Get() (gather, error) {
 	return gather{}, nil
 }

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"gather"
+	"github.com/skeptycal/littlejohn/gather"
 )
 
 func main() {

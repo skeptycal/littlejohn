@@ -4,7 +4,6 @@ import (
 	crypto_rand "crypto/rand"
 	"encoding/binary"
 	"math/rand"
-	math_rand "math/rand"
 )
 
 // init initializes a generic random seed for any
@@ -15,18 +14,18 @@ func init() {
 	if err != nil {
 		panic("cannot seed math/rand package with cryptographically secure random number generator")
 	}
-	math_rand.Seed(int64(binary.LittleEndian.Uint64(b[:])))
+	rand.Seed(int64(binary.LittleEndian.Uint64(b[:])))
 }
 
-// randomStringNoConsecutive creates a random string
+// RandomStringNoConsecutive creates a random string
 // from upper case characters; identical consecutive
 // letters are not allowed.
-func randomStringNoConsecutive(l int) string {
+func RandomStringNoConsecutive(l int) string {
 	bytes := make([]byte, l)
 	var temp int
 	for i := 0; i < l; {
-		if randInt(65, 90) != temp {
-			temp = randInt('A', 'Z')
+		if RandInt(65, 90) != temp {
+			temp = RandInt('A', 'Z')
 			bytes[i] = byte(temp)
 			i++
 		}
@@ -36,18 +35,18 @@ func randomStringNoConsecutive(l int) string {
 
 // randomStringNoConsecutive creates a random string
 // from upper case characters
-func randomString(l int) string {
+func RandomString(l int) string {
 	bytes := make([]byte, l)
 	for i := 0; i < l; i++ {
-		bytes[i] = byte(randInt('A', 'Z'))
+		bytes[i] = byte(RandInt('A', 'Z'))
 	}
 	return string(bytes)
 }
 
-func randInt(min int, max int) int {
+func RandInt(min int, max int) int {
 	return min + rand.Intn(max-min)
 }
 
-func randomFromPool(l int, pool string) string {
+func RandomFromPool(l int, pool string) string {
 	return ""
 }

@@ -1,7 +1,9 @@
 package main
 
 import (
-	gather
+	"fmt"
+
+	"gather"
 )
 
 func main() {

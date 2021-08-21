@@ -12,5 +12,5 @@ type gather struct{}
 func init() { rand.Seed(time.Now().UTC().UnixNano()) }
 
 func get() (gather, error) {
-
+	return gather{}, nil
 }

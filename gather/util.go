@@ -49,5 +49,5 @@ func randInt(min int, max int) int {
 }
 
 func randomFromPool(l int, pool string) string {
-
+	return ""
 }

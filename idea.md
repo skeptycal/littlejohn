@@ -4,4 +4,8 @@
 
 ## Goals
 
--
+-   download option data from [ ??? ]
+-   calculate / display greeks
+-   select appropriate trades
+-   calculate key adjustment levels
+-   setup text alerts

@@ -9,6 +9,7 @@
 **/*temp
 **/*tmp
 **/.waka*
+**/data_sources*.*
 
 ### Repo Specific ###
 **/idea.md

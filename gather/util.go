@@ -4,6 +4,7 @@ import (
 	crypto_rand "crypto/rand"
 	"encoding/binary"
 	"math/rand"
+	"time"
 )
 
 // init initializes a generic random seed for any
@@ -49,4 +50,18 @@ func RandInt(min int, max int) int {
 
 func RandomFromPool(l int, pool string) string {
 	return ""
+}
+
+// Looper repeats a function call until the Enter key is pressed.
+// Each repeat is separated by a pause duration. Any duration less
+// than 10 ms is adjusted up to 10 ms.
+// The function cannot have arguments or return values.
+func Looper(fn func(), pause time.Duration) {
+	if pause < 10*time.Millisecond {
+		pause = time.Second * 1
+	}
+	for {
+		fn()
+		time.Sleep(i)
+	}
 }

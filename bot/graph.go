@@ -4,12 +4,16 @@ import (
 	"fmt"
 	"strings"
 	"sync"
+
+	"github.com/skeptycal/littlejohn/config"
 )
 
 const (
 	graphSep string = " -> "
 	newline  byte   = '\n'
 )
+
+var Config = config.Config
 
 type (
 	// Graph is the graph of rules allowing users to define

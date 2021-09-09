@@ -4,8 +4,7 @@ type OrderType uint8
 
 const (
 	FakeOrderType OrderType = iota
-	Buy
-	Sell
+	Single
 	CreditSpread
 	CreditIronCondor
 	DebitSpread

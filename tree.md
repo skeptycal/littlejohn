@@ -23,24 +23,71 @@
 ├── LICENSE
 ├── README.md
 ├── SECURITY.md
+├── bot
+│   ├── bot.go
+│   └── graph.go
 ├── cmd
-│   └── example
-│       └── littlejohn
+│   └── examples
+│       ├── gather
+│       │   ├── pricedatatype
+│       │   │   └── main.go
+│       │   ├── randomint
+│       │   │   └── main.go
+│       │   └── randomstring
+│       │       └── main.go
+│       ├── littlejohn
+│       │   └── main.go
+│       └── logger
 │           └── main.go
+├── config
+│   ├── ansicolormap.go
+│   ├── config.go
+│   └── util.go
 ├── contributing.md
 ├── coverage.txt
+├── data_sources.json
 ├── docs
 │   ├── _config.yml
+│   ├── _config.yml~
 │   ├── docs.md
+│   ├── docs.md~
 │   ├── index.html
-│   └── template.md
+│   ├── index.html~
+│   ├── template.md
+│   └── template.md~
 ├── example.go
+├── examples
+│   └── examples.go
+├── gather
+│   ├── data_sources.folder
+│   ├── getdata.go
+│   ├── stockdata.go
+│   └── util.go
+├── go.doc
+├── go.mod
+├── go.sum
 ├── go.test.sh
 ├── idea.md
+├── instruments
+│   ├── current.go
+│   ├── historical.go
+│   ├── instruments.go
+│   └── session.go
+├── littlejohn.go
+├── logging
+│   ├── enverror.go
+│   ├── errors.go
+│   └── logging.go
 ├── make_tree_md.sh
+├── trades
+│   ├── confirmation.go
+│   ├── order.go
+│   ├── orderTypes.go
+│   ├── refType.go
+│   └── triggerTypes.go
 └── tree.md
 
-7 directories, 26 files
+20 directories, 60 files
 ```
 
 [get_tree]: (http://mama.indstate.edu/users/ice/tree/)
